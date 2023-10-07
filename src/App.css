@@ -3,3 +3,11 @@
   display: block;
   margin: 0 auto;
 }
+.studentName {
+  color: #6b62ff;
+  font-weight: 700;
+}
+.sheCodes {
+  color: #fd729b;
+  font-weight: 700;
+}
