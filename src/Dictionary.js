@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
+import axios from "axios";
 
 export default function Dictionary() {
   let [word, setWord] = useState("");
+  function handleResponse(response) {
+    console.log(response.data[0]);
+  }
   function search(event) {
+    let apiKey = "b99atfd426b3cde797eo6c02fa816d9b";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
     event.preventDefault();
-    alert(`Searching for ${word}`);
   }
   function handleWordChange(event) {
     setWord(event.target.value);
