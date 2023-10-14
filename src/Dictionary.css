@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+
+.Dictionary section {
+  background: #118a7e;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgb(0 0 0/10%);
+}

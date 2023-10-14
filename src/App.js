@@ -1,20 +1,13 @@
 import "./App.css";
-import book from "./book.png";
 import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <img
-            src={book}
-            className="book-img img-fluid"
-            alt="cartoon book lover"
-          />
-        </header>
+        <header className="App-header"></header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="Relax" />
         </main>
         <footer className="text-center">
           Coded by <span className="studentName">Danielle Hards</span> for{" "}
