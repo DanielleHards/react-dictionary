@@ -2,10 +2,11 @@ body {
   background: #1f6f78;
   color: #93e4c1;
 }
-.book-img {
-  display: block;
+.App {
+  max-width: 960px;
   margin: 0 auto;
 }
+
 .studentName {
   color: #6b62ff;
   font-weight: 700;
